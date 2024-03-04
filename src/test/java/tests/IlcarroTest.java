@@ -8,11 +8,11 @@ import pages.LoginPage;
 import pages.MainPage;
 import pages.RegistrationPage;
 
-public class IllcarroTest extends BaseTest {
+public class IlcarroTest extends BaseTest {
 
     @Test
     @Parameters("browser")
-    public void illcarroTest_001(String browser) throws InterruptedException {
+    public void ilcarroTest_001(String browser) throws InterruptedException {
         MainPage mainPage = new MainPage(getDriver());
         RegistrationPage registrationPage = mainPage.openTopMenu(TopMenuItem.LOGIN.toString());
         registrationPage.fillEmailField("yanhik03@mail.ru").clickByRegistrationButton();
