@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class FuelGenerator {
     //    public static void main(String[] args) {
-//        System.out.println("MANUFACTURE :"+generateFuel());
+//        System.out.println("FUEL :"+generateFuel());
 //    }
     private static final String[] fuel = {"Diesel", "Petrol", "Hybrid", "Electric", "Gas"};
     private static final Random random = new Random();

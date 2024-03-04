@@ -34,11 +34,21 @@ public class RegistrationPage extends BasePage{
     // Найденный элемент сохраняется в переменной registrationField типа WebElement.
     WebElement registrationButton;
 
-    public RegistrationPage clickByRegistartionButton() {
+       public RegistrationPage fillEmailField(String email){ // Этот метод заполняет поле электронной почты на веб-странице.
+        // Он принимает строку email, переданную в качестве аргумента, и использует метод sendKeys(),
+        // чтобы ввести эту строку в поле emailField.
+        emailField.sendKeys(email);
+        return  this;
+    }
+
+    public RegistrationPage clickByRegistrationButton() {
         registrationButton.click();
         return this;
     }
-
+    public RegistrationPage fillPasswordField(String password){
+        passwordField.sendKeys(password);
+        return  this;
+    }
     public RegistrationPage(WebDriver driver){
         setDriver(driver);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 20), this);
