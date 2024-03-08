@@ -14,20 +14,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class LoginPage extends BasePage{
-    @FindBy(xpath = "//label[@class='input-label'][contains (text(),'Email')]")
+    @FindBy(xpath = "//label[contains (text(),'Email')]")
     //Эта строка использует аннотацию @FindBy для поиска
     // веб-элемента на веб-странице с помощью XPath-выражения. В данном случае, элемент найден по XPath,
     // который ищет <input> элемент с атрибутом name, равным "email".
     // Найденный элемент сохраняется в переменной emailField типа WebElement.
     WebElement emailField;
 
-    @FindBy(xpath = "//label[@class='input-label'][contains (text(),'Password')]") //Эта строка использует аннотацию @FindBy для поиска
+    @FindBy(xpath = "//label[contains (text(),'Password')]") //Эта строка использует аннотацию @FindBy для поиска
     // веб-элемента на веб-странице с помощью XPath-выражения. В данном случае, элемент найден по XPath,
     // который ищет <input> элемент с атрибутом name, равным "password".
     // Найденный элемент сохраняется в переменной passwordField типа WebElement.
     WebElement passwordField;
 
-    @FindBy(xpath = "//button[@type='submit']") //Эта строка использует аннотацию @FindBy для поиска
+    @FindBy(xpath = "//button[contains(text(),'Y’alla!')]") //Эта строка использует аннотацию @FindBy для поиска
     // веб-элемента на веб-странице с помощью XPath-выражения. В данном случае, элемент найден по XPath,
     // который ищет <button> элемент с атрибутом name, равным "login".
     // Найденный элемент сохраняется в переменной loginField типа WebElement.

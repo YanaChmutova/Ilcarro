@@ -8,12 +8,12 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class HomePage extends BasePage {
 
-    @FindBy(xpath = "//label[@for='city']")
+    @FindBy(xpath = "//label[contains(text(),'City')]")
     WebElement cityField;
-    @FindBy(xpath = "//label[@for='dates']")
+    @FindBy(xpath = "//label[contains(text(),'Dates')]")
     WebElement datesField;
 
-    @FindBy(xpath = "//button[@type='submit']")
+    @FindBy(xpath = "//button[contains(text(),'Y’alla!')]")
     WebElement searchButton;
 
     public HomePage(WebDriver driver){

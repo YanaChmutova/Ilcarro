@@ -12,27 +12,27 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class LetCarWorkPage extends BasePage {
-    @FindBy(xpath = "//input[@ng-reflect-name='pickUpPlace']")
+    @FindBy(xpath = "//input[@placeholder='Enter your address']")
     WebElement emailField;
-    @FindBy(xpath = "//label[@for='make']")
+    @FindBy(xpath = "//label[contains(text(),'Manufacture')]")
     WebElement manufactureField;
-    @FindBy(xpath = "//label[@for='model']")
+    @FindBy(xpath = "//label[contains(text(),'Model')]")
     WebElement modelField;
-    @FindBy(xpath = "//label[@for='year']")
+    @FindBy(xpath = "//label[contains(text(),'Year')]")
     WebElement yearField;
-    @FindBy(xpath = "//label[@for='fuel']")
+    @FindBy(xpath = "//label[contains(text(),'Fuel')]")
     WebElement fuelField;
-    @FindBy(xpath = "//label[@for='seats']")
+    @FindBy(xpath = "//label[contains(text(),'Seats')]")
     WebElement seatsField;
-    @FindBy(xpath = "//label[@for='class']")
+    @FindBy(xpath = "//label[contains(text(),'Car class')]")
     WebElement classField;
-    @FindBy(xpath = "//label[@for='serialNumber']")
+    @FindBy(xpath = "//label[contains(text(),'Car registration number')]")
     WebElement serialNumberField;
-    @FindBy(xpath = "//label[@for='price']")
+    @FindBy(xpath = "//label[contains(text(),'Price')]")
     WebElement priceField;
     @FindBy(xpath = "//textarea[@id='about']")
     WebElement areaField;
-    @FindBy(xpath = "//button[@type='submit']")
+    @FindBy(xpath = "//button[contains(text(),'Submit')]")
     WebElement submitButton;
 
     public LetCarWorkPage(WebDriver driver){
